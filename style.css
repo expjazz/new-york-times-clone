@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 .header {
   display: flex;
@@ -72,6 +73,14 @@ body {
   justify-content: center;
   align-items: center;
   margin: 100px 200px;
+}
+
+#titled {
+  font-family: "Sorts Mill Goudy", serif;
+  font-style: italic;
+  font-size: 1.9rem;
+  font-weight: bolder;
+  margin-bottom: 25px;
 }
 
 .title .subtitle {
