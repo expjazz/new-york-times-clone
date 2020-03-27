@@ -70,7 +70,10 @@ body {
   align-content: center;
   justify-content: center;
   align-items: center;
-  margin: 100px auto;
+  margin: 100px 200px;
+}
+
+.title .subtitle {
 }
 
 .title .subtitle {
@@ -80,6 +83,16 @@ section .title {
 }
 
 section .img img {
-  height: 500px;
-  width: 500px;
+  height: 39em;
+  width: 59em;
+}
+
+.mainsection {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.subsection1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
