@@ -4,6 +4,7 @@ body {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+
 .header {
   display: flex;
   justify-content: center;
@@ -12,13 +13,11 @@ body {
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
   width: 95vw;
   position: fixed;
   align-items: center;
   margin-top: -6px;
   background: white;
-  /* padding: 0 10px; */
 }
 
 .left-nav {
@@ -42,6 +41,7 @@ body {
   display: flex;
   align-items: center;
 }
+
 .mid-nav img {
   height: 50px;
   align-self: center;
@@ -50,6 +50,7 @@ body {
 .right-nav {
   display: flex;
 }
+
 .right-nav button {
   background: #567b95;
   height: 35px;
@@ -83,15 +84,6 @@ body {
   margin-bottom: 25px;
 }
 
-.title .subtitle {
-}
-
-.title .subtitle {
-  display: ;
-}
-section .title {
-}
-
 section .img img {
   height: 39em;
   width: 59em;
@@ -101,7 +93,6 @@ section .img img {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   margin: -5rem;
-  /* grid-template-rows: repeat(10, 1fr); */
 }
 
 .subsection1 {
@@ -125,15 +116,15 @@ section .img img {
 }
 
 .subsection1 .icons a {
-  background: #eeeeee;
+  background: #eee;
   display: inline-block;
   border-radius: 40%;
-  /* width: 30px; */
   padding: 7px;
   font-size: 15px;
   text-decoration: none;
   color: black;
 }
+
 .subsection2 {
   grid-area: 2 / 4 / 6 / 8;
 }
