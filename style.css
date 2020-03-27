@@ -16,6 +16,7 @@ body {
   position: fixed;
   align-items: center;
   margin-top: -6px;
+  background: white;
   /* padding: 0 10px; */
 }
 
@@ -89,10 +90,41 @@ section .img img {
 
 .mainsection {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(10, 1fr);
+  margin: -5rem;
+  /* grid-template-rows: repeat(10, 1fr); */
 }
 
 .subsection1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column: 4/8;
+  grid-gap: 10px;
+}
+
+.subsection1 .date-icons {
+  grid-area: 2 / 1 / 2 / 2;
+}
+
+.subsection1 .icons {
+  grid-area: 2 / 3 / 2 / 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.subsection1 .icons a {
+  background: #eeeeee;
+  display: inline-block;
+  border-radius: 40%;
+  /* width: 30px; */
+  padding: 7px;
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+}
+.subsection2 {
+  grid-area: 2 / 4 / 6 / 8;
 }
