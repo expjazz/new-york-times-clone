@@ -176,18 +176,35 @@ section .img img {
 .content2 {
   grid-area: 4 / 4 / 5 / 8;
 }
+
 .subsection3 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column: 3 / 9;
   grid-row: 5 / 6;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: 70px repeat(4, 1fr);
   grid-gap: 1em;
+}
+
+.subsection3 .theory {
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+  align-self: end;
+}
+
+.subsection3 .theory p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.subsection3 .theory #theory-title {
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .subsection3 .img {
   grid-column: 1 / 5;
-  grid-row: 1 / 5;
+  grid-row: 2 / 6;
   z-index: -1;
   /* height: 220px; */
 }
@@ -197,41 +214,50 @@ section .img img {
 }
 
 .subsection3 .number1 {
-  grid-area: 2 / 1 / 3 / 2;
+  grid-area: 3 / 1 / 4 / 2;
   font-size: 10px;
 }
 
 .subsection3 .number2 {
-  grid-area: 2 / 2 / 3 / 3;
+  grid-area: 3 / 2 / 4 / 3;
   font-size: 10px;
 }
 
 .subsection3 .number3 {
-  grid-area: 2 / 3 / 3 / 4;
+  grid-area: 3 / 3 / 4 / 4;
   font-size: 10px;
 }
 
 .subsection3 .number4 {
-  grid-area: 2 / 4 / 3 / 5;
+  grid-area: 3 / 4 / 4 / 5;
   font-size: 10px;
 }
 
 .subsection3 .number5 {
-  grid-area: 4 / 1 / 5 / 2;
+  grid-area: 5 / 1 / 6 / 2;
   font-size: 10px;
 }
 
 .subsection3 .number6 {
-  grid-area: 4 / 2 / 5 / 3;
+  grid-area: 5 / 2 / 6 / 3;
   font-size: 10px;
 }
 
 .subsection3 .number7 {
-  grid-area: 4 / 3 / 5 / 4;
+  grid-area: 5 / 3 / 6 / 4;
   font-size: 10px;
 }
 
 .subsection3 .number8 {
-  grid-area: 4 / 4 / 5 / 5;
+  grid-area: 5 / 4 / 6 / 5;
   font-size: 10px;
+}
+
+.subsection3 .theory-foot {
+  grid-area: 7 / 1 / 8 / 3;
+  font-size: 12px;
+}
+
+.subsection3 .theory-foot hr {
+  width: 60px;
 }
