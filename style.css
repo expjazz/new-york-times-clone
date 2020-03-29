@@ -1,3 +1,7 @@
+:root {
+  --border-color: #e2e2e2;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -92,6 +96,7 @@ section .img img {
 .mainsection {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: auto;
   margin: -5rem;
 }
 
@@ -128,13 +133,54 @@ section .img img {
 .subsection2 {
   /* grid-area: 2 / 4 / 6 / 8; */
   grid-column: 4/8;
-  grid-auto-rows: minmax(100px, auto);
+
+  grid-auto-rows: minmax(10px, auto);
 }
 
+.editor {
+  grid-area: 2 / 8 / 5/ 10;
+  align-self: center;
+  margin-left: 60px;
+}
+
+.editor .editor-title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.editor .editor-title hr {
+  width: 228px;
+  border: 1px solid var(--border-color);
+  margin-left: 0px;
+}
+
+.editor .img-text {
+  display: flex;
+  font-size: 8px;
+}
+
+.editor .img-text p {
+  font-size: 15px;
+  margin-top: -1px;
+}
+
+.editor .img-text img {
+  height: 80px;
+  width: 81px;
+}
+
+.unlock {
+  grid-area: 3 / 4 / 4 / 8;
+}
+
+.content2 {
+  grid-area: 4 / 4 / 5 / 8;
+}
 .subsection3 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column: 3 / 9;
+  grid-row: 5 / 6;
   grid-template-rows: repeat(4, 1fr);
   grid-gap: 1em;
 }
