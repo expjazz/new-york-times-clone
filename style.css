@@ -261,3 +261,29 @@ section .img img {
 .subsection3 .theory-foot hr {
   width: 60px;
 }
+
+.subsection4 {
+  /* grid-area: 2 / 4 / 6 / 8; */
+  grid-column: 4/8;
+
+  grid-auto-rows: minmax(10px, auto);
+}
+
+.subsection4 .pict-sub {
+  margin-top: -1px;
+  margin-bottom: 3px;
+  color: #666;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.subsection4 .pict-sub span {
+  color: #8d8d8d;
+  font-size: 10px;
+  display: block;
+}
+
+.subsection4 .img img {
+  width: 560px;
+  height: 315px;
+}
