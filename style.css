@@ -287,3 +287,79 @@ section .img img {
   width: 560px;
   height: 315px;
 }
+
+.subsection5 {
+  grid-column: 4/8;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+.subsection5 .text {
+  font-size: 10px;
+}
+
+.subsection5 .text a {
+  text-decoration: none;
+}
+
+.subsection5 .text a:hover {
+  text-decoration: none;
+}
+
+.subsection5 .comments-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subsection5 .comments-buttons .btn {
+  background: #567b95;
+  padding: 7px 70px;
+  border-radius: 2px;
+  border: 1px solid #567b95;
+  color: white;
+  font-weight: 600;
+}
+
+.subsection5 .icons {
+  width: 202px;
+  display: flex;
+  justify-content: space-around;
+}
+.subsection5 .comments-buttons .icons a {
+  background: #eee;
+  display: inline-block;
+  border-radius: 12px;
+  padding: 7px;
+  /* font-size: 15px; */
+  text-decoration: none;
+  color: black;
+}
+
+.subsection5 .comments-buttons .icons a svg {
+  font-size: 12px;
+}
+
+.more-in {
+  grid-column: 2 / 7;
+}
+.more-in .wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.more-in .wrapper .wrap-item {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+.more-in .wrapper .wrap-item .more-image {
+  width: 251px;
+  height: 150px;
+}
+
+.more-in .wrapper .wrap-item .more-image img {
+  width: 100%;
+  height: 100%;
+}
