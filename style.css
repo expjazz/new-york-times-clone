@@ -7,6 +7,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  line-height: 2rem;
 }
 
 .header {
@@ -17,11 +18,12 @@ body {
 .nav {
   display: flex;
   justify-content: space-between;
-  width: 95vw;
+  width: 98.5vw;
   position: fixed;
   align-items: center;
   margin-top: -6px;
   background: white;
+  border-bottom: 1px solid #e2e2e2;
 }
 
 .left-nav {
@@ -58,13 +60,14 @@ body {
 .right-nav button {
   background: #567b95;
   height: 35px;
-  border: 1px solid#567b95;
+  border: 1px solid#326891;
   border-radius: 4px;
   text-transform: uppercase;
   color: white;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 10px;
-  padding: 5px;
+  padding: 5px 17px;
+  margin: 0 3px;
 }
 
 .right-nav .button1 {
@@ -83,9 +86,11 @@ body {
 #titled {
   font-family: "Sorts Mill Goudy", serif;
   font-style: italic;
-  font-size: 1.9rem;
+  font-size: 2.3rem;
   font-weight: bolder;
   margin-bottom: 25px;
+  margin-left: -248px;
+  line-height: 45px;
 }
 
 section .img img {
