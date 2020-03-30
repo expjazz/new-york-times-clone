@@ -447,3 +447,22 @@ section .img img {
 .footer-content a:hover {
   text-decoration: underline;
 }
+
+.footer-content .col-6 img {
+  width: 18px;
+  height: 18px;
+}
+
+.end {
+  grid-column: 2 / 9;
+}
+
+.end ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.end ul li a {
+  font-size: 10px;
+}
