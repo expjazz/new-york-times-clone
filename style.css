@@ -459,10 +459,11 @@ section .img img {
 }
 
 .more-in .wrapper .wrap-item {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   width: 250px;
   margin-right: 10px;
+  /* justify-content: flex-start; */
 }
 
 .more-in .wrapper .wrap-item .more-image {
@@ -477,9 +478,22 @@ section .img img {
 
 .more-in .wrapper .wrap-item .legend {
   font-size: 9px;
-  align-self: flex-end;
+  float: right;
 }
 
+.more-in .wrapper .wrap-item .sub-title {
+  clear: right;
+  font-size: 14px;
+  font-weight: 600;
+}
+.more-in .wrapper .wrap-item .legend-2 {
+  float: left;
+  font-size: 9px;
+}
+
+#leg-hide {
+  visibility: hidden;
+}
 .more-in .wrapper2 {
   display: flex;
   justify-content: space-evenly;
@@ -487,8 +501,8 @@ section .img img {
 }
 
 .more-in .wrapper2 .wrap-item {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   width: 250px;
   margin-right: 10px;
 }
@@ -503,9 +517,37 @@ section .img img {
   height: 100%;
 }
 
+.more-in .wrapper2 .wrap-item .legend {
+  font-size: 9px;
+  float: right;
+}
+
+.more-in .wrapper2 .wrap-item .sub-title {
+  clear: right;
+  font-size: 14px;
+  font-weight: 600;
+}
+.more-in .wrapper2 .wrap-item .legend-2 {
+  float: left;
+  font-size: 9px;
+}
+
+.most-popular a {
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: black;
+}
+
 .most-popular {
   grid-column: 7 / 10;
-  margin-left: 50px;
+  margin-left: 74px;
+  width: 324px;
+}
+
+#most-popular-title {
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .logo-separator {
@@ -526,6 +568,13 @@ section .img img {
 .logo-separator #link-1 {
   margin-top: -28px;
   z-index: -3;
+}
+
+.logo-separator .links #link-2 {
+  text-decoration: none;
+  font-size: 8px;
+  color: #666;
+  align-self: center;
 }
 
 .logo-separator img {
@@ -549,11 +598,18 @@ section .img img {
 .footer-content .col {
   display: grid;
   justify-content: start;
+  grid-auto-rows: min-content;
+}
+
+.footer-content .col p {
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .footer-content a {
   text-decoration: none;
   color: black;
+  font-size: 13px;
 }
 
 .footer-content a:hover {
