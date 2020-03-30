@@ -343,15 +343,19 @@ section .img img {
 .more-in {
   grid-column: 2 / 7;
 }
+
 .more-in .wrapper {
   display: flex;
   justify-content: space-evenly;
+  width: 800px;
+  flex-wrap: wrap;
 }
 
 .more-in .wrapper .wrap-item {
   display: flex;
   flex-direction: column;
   width: 250px;
+  margin-right: 10px;
 }
 
 .more-in .wrapper .wrap-item .more-image {
@@ -362,4 +366,32 @@ section .img img {
 .more-in .wrapper .wrap-item .more-image img {
   width: 100%;
   height: 100%;
+}
+
+.more-in .wrapper2 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 800px;
+}
+
+.more-in .wrapper2 .wrap-item {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin-right: 10px;
+}
+
+.more-in .wrapper2 .wrap-item .more-image {
+  width: 251px;
+  height: 150px;
+}
+
+.more-in .wrapper2 .wrap-item .more-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.most-popular {
+  grid-column: 7 / 10;
+  margin-left: 50px;
 }
