@@ -100,9 +100,16 @@ body {
 }
 
 .title .subtitle span {
-  color: #888888;
+  color: #888;
   font-size: 12px;
 }
+
+.logo-separator img {
+  height: 76px;
+  width: 194px;
+  margin-top: 5px;
+}
+
 section .img img {
   height: 39em;
   width: 59em;
@@ -123,21 +130,104 @@ section .img img {
   grid-gap: 10px;
 }
 
+.more-in a {
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  margin: 2px 0;
+}
+
+.most-popular a {
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: black;
+}
+
+.subscribe a {
+  margin: 7px 0;
+}
+
+.end ul li a {
+  font-size: 10px;
+  text-decoration: none;
+  color: #888;
+}
+
 .subsection1 .report-name {
   font-weight: 600;
   grid-column: 1/3;
-  color: #333333;
+  color: #333;
+}
+
+.unlock hr {
+  color: #ccc;
+  width: 73px;
 }
 
 .subsection1 .report-name a {
-  color: #333333;
+  color: #333;
   text-decoration: none;
   border-bottom: 1px solid #a09999f7;
+}
+
+.subsection1 .icons a {
+  background: #eee;
+  display: inline-block;
+  border-radius: 102%;
+  padding: 8px;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+
+.editor .img-text a {
+  display: flex;
+  text-decoration: none;
+  color: #333;
+}
+
+.end {
+  grid-column: 2 / 9;
+}
+
+.end-line {
+  width: 105%;
+  color: #888;
+}
+
+.end ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.subsection5 .text a {
+  text-decoration: none;
+}
+
+.more-in a:hover {
+  text-decoration: underline;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+.end ul li a:hover {
+  text-decoration: underline;
 }
 
 .subsection1 .report-name a:hover {
   border-bottom: none;
 }
+
 .subsection1 .date-icons {
   grid-area: 2 / 1 / 2 / 2;
   font-size: small;
@@ -153,20 +243,8 @@ section .img img {
   align-self: center;
 }
 
-.subsection1 .icons a {
-  background: #eee;
-  display: inline-block;
-  border-radius: 102%;
-  padding: 8px;
-  font-size: 14px;
-  text-decoration: none;
-  color: black;
-}
-
 .subsection2 {
-  /* grid-area: 2 / 4 / 6 / 8; */
   grid-column: 4/8;
-
   grid-auto-rows: minmax(10px, auto);
 }
 
@@ -192,16 +270,20 @@ section .img img {
   font-weight: 600;
 }
 
+.more-in hr {
+  width: 783px;
+  color: #000;
+}
+
+.logo-separator hr {
+  width: 100%;
+  border: 3px double var(--border-color);
+}
+
 .editor .editor-title hr {
   width: 228px;
   border: 1px solid var(--border-color);
-  margin-left: 0px;
-}
-
-.editor .img-text a {
-  display: flex;
-  text-decoration: none;
-  color: #333;
+  margin-left: 0;
 }
 
 .editor .img-text a:hover {
@@ -222,6 +304,10 @@ section .img img {
   margin-left: 10px;
 }
 
+.subscribe a img {
+  margin-right: 5px;
+}
+
 .editor .img-text img {
   height: 80px;
   width: 81px;
@@ -232,15 +318,6 @@ section .img img {
   justify-self: center;
   font-size: 14px;
   font-weight: 600;
-}
-
-.unlock a {
-  text-decoration: none;
-}
-
-.unlock hr {
-  color: #cccccc;
-  width: 73px;
 }
 
 .content2 {
@@ -276,7 +353,6 @@ section .img img {
   grid-column: 1 / 5;
   grid-row: 2 / 6;
   z-index: -1;
-  /* height: 220px; */
 }
 
 .subsection3 .img img {
@@ -345,9 +421,7 @@ section .img img {
 }
 
 .subsection4 {
-  /* grid-area: 2 / 4 / 6 / 8; */
   grid-column: 4/8;
-
   grid-auto-rows: minmax(10px, auto);
 }
 
@@ -387,10 +461,6 @@ section .img img {
   font-size: 10px;
 }
 
-.subsection5 .text a {
-  text-decoration: none;
-}
-
 .subsection5 .text a:hover {
   text-decoration: none;
 }
@@ -414,14 +484,18 @@ section .img img {
   display: flex;
   justify-content: space-around;
 }
+
 .subsection5 .comments-buttons .icons a {
   background: #eee;
   display: inline-block;
   border-radius: 12px;
   padding: 7px;
-  /* font-size: 15px; */
   text-decoration: none;
   color: black;
+}
+
+.subscribe a svg {
+  margin-right: 7px;
 }
 
 .subsection5 .comments-buttons .icons a svg {
@@ -430,21 +504,6 @@ section .img img {
 
 .more-in {
   grid-column: 2 / 7;
-}
-
-.more-in hr {
-  width: 783px;
-  color: #000;
-}
-
-.more-in a {
-  font-size: 14px;
-  text-decoration: none;
-  color: black;
-}
-
-.more-in a:hover {
-  text-decoration: underline;
 }
 
 .more-in a h2 {
@@ -459,16 +518,18 @@ section .img img {
 }
 
 .more-in .wrapper .wrap-item {
-  /* display: flex;
-  flex-direction: column; */
   width: 250px;
   margin-right: 10px;
-  /* justify-content: flex-start; */
 }
 
 .more-in .wrapper .wrap-item .more-image {
   width: 251px;
   height: 150px;
+}
+
+.footer-content .col-6 img {
+  width: 18px;
+  height: 18px;
 }
 
 .more-in .wrapper .wrap-item .more-image img {
@@ -486,6 +547,7 @@ section .img img {
   font-size: 14px;
   font-weight: 600;
 }
+
 .more-in .wrapper .wrap-item .legend-2 {
   float: left;
   font-size: 9px;
@@ -494,6 +556,7 @@ section .img img {
 #leg-hide {
   visibility: hidden;
 }
+
 .more-in .wrapper2 {
   display: flex;
   justify-content: space-evenly;
@@ -527,16 +590,10 @@ section .img img {
   font-size: 14px;
   font-weight: 600;
 }
+
 .more-in .wrapper2 .wrap-item .legend-2 {
   float: left;
   font-size: 9px;
-}
-
-.most-popular a {
-  text-decoration: none;
-  font-weight: 600;
-  line-height: 1.5rem;
-  color: black;
 }
 
 .most-popular {
@@ -577,21 +634,9 @@ section .img img {
   align-self: center;
 }
 
-.logo-separator img {
-  height: 76px;
-  width: 194px;
-}
-
-.logo-separator hr {
-  width: 100%;
-  border: 3px double var(--border-color);
-}
-
-.footer-content {
-  grid-column: 2 / 9;
-}
 .footer-content {
   display: grid;
+  grid-column: 2 / 9;
   grid-auto-flow: column;
 }
 
@@ -606,31 +651,22 @@ section .img img {
   font-weight: 600;
 }
 
-.footer-content a {
-  text-decoration: none;
-  color: black;
-  font-size: 13px;
+.col-6 {
+  border-left: 1px solid #888;
+  padding-left: 10px;
 }
 
-.footer-content a:hover {
-  text-decoration: underline;
-}
-
-.footer-content .col-6 img {
-  width: 18px;
-  height: 18px;
-}
-
-.end {
-  grid-column: 2 / 9;
-}
-
-.end ul {
-  list-style: none;
+.subscribe {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 10px;
 }
 
-.end ul li a {
+.sub-line {
+  width: 170%;
+  color: #888;
+}
+
+a.sub-list {
   font-size: 10px;
 }
