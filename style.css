@@ -395,3 +395,55 @@ section .img img {
   grid-column: 7 / 10;
   margin-left: 50px;
 }
+
+.logo-separator {
+  grid-column: 2/9;
+  display: grid;
+}
+
+.logo-separator .logo {
+  display: grid;
+  grid-column: 1/ 2;
+}
+
+.logo-separator .links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-separator #link-1 {
+  margin-top: -28px;
+  z-index: -3;
+}
+
+.logo-separator img {
+  height: 76px;
+  width: 194px;
+}
+
+.logo-separator hr {
+  width: 100%;
+  border: 3px double var(--border-color);
+}
+
+.footer-content {
+  grid-column: 2 / 9;
+}
+.footer-content {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.footer-content .col {
+  display: grid;
+  justify-content: start;
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
