@@ -198,6 +198,16 @@ section .img img {
   margin-left: 0px;
 }
 
+.editor .img-text a {
+  display: flex;
+  text-decoration: none;
+  color: #333;
+}
+
+.editor .img-text a:hover {
+  text-decoration: underline;
+}
+
 .editor .img-text {
   display: flex;
   font-size: 8px;
@@ -275,51 +285,63 @@ section .img img {
 
 .subsection3 .number1 {
   grid-area: 3 / 1 / 4 / 2;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .subsection3 .number2 {
   grid-area: 3 / 2 / 4 / 3;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .subsection3 .number3 {
   grid-area: 3 / 3 / 4 / 4;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .subsection3 .number4 {
   grid-area: 3 / 4 / 4 / 5;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .subsection3 .number5 {
   grid-area: 5 / 1 / 6 / 2;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .subsection3 .number6 {
   grid-area: 5 / 2 / 6 / 3;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .subsection3 .number7 {
   grid-area: 5 / 3 / 6 / 4;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .subsection3 .number8 {
   grid-area: 5 / 4 / 6 / 5;
-  font-size: 10px;
+  font-size: 12px;
+}
+
+.subsection3 .lower {
+  margin-top: -15px;
 }
 
 .subsection3 .theory-foot {
   grid-area: 7 / 1 / 8 / 3;
   font-size: 12px;
+  margin-top: -25px;
 }
 
 .subsection3 .theory-foot hr {
   width: 60px;
+  float: left;
+  color: #000;
+}
+
+.subsection3 .theory-foot p {
+  clear: left;
+  margin-top: 25px;
 }
 
 .subsection4 {
@@ -333,18 +355,23 @@ section .img img {
   margin-top: -1px;
   margin-bottom: 3px;
   color: #666;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
+  width: 532px;
 }
 
 .subsection4 .pict-sub span {
   color: #8d8d8d;
   font-size: 10px;
-  display: block;
+  display: inline-block;
+}
+
+.subsection4 .video1 {
+  width: 590px;
 }
 
 .subsection4 .img img {
-  width: 560px;
+  width: 590px;
   height: 315px;
 }
 
@@ -353,6 +380,7 @@ section .img img {
   display: flex;
   flex-direction: column;
   align-content: space-around;
+  margin-bottom: 50px;
 }
 
 .subsection5 .text {
@@ -404,6 +432,25 @@ section .img img {
   grid-column: 2 / 7;
 }
 
+.more-in hr {
+  width: 783px;
+  color: #000;
+}
+
+.more-in a {
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+
+.more-in a:hover {
+  text-decoration: underline;
+}
+
+.more-in a h2 {
+  font-size: 14px;
+}
+
 .more-in .wrapper {
   display: flex;
   justify-content: space-evenly;
@@ -426,6 +473,11 @@ section .img img {
 .more-in .wrapper .wrap-item .more-image img {
   width: 100%;
   height: 100%;
+}
+
+.more-in .wrapper .wrap-item .legend {
+  font-size: 9px;
+  align-self: flex-end;
 }
 
 .more-in .wrapper2 {
