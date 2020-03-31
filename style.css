@@ -9,6 +9,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+body a {
+  color: #326891;
+}
+
 .header {
   display: flex;
   justify-content: center;
