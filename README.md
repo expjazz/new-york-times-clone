@@ -1,4 +1,4 @@
-# Youtube Clone
+# New York Times clone
 
 > We made a clone of one of the most important news outlets of the world. This is an exercise from the Microverse bootcamp to practice CSS Grid, Flexbox and Float.
 
