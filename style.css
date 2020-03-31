@@ -1,0 +1,676 @@
+:root {
+  --border-color: #e2e2e2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body a {
+  color: #326891;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 98.5vw;
+  position: fixed;
+  align-items: center;
+  margin-top: -6px;
+  background: white;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.left-nav {
+  display: flex;
+}
+
+.left-nav div {
+  margin: 0 10px;
+}
+
+.left-nav a {
+  color: black;
+  text-decoration: none;
+}
+
+.left-nav .link3 {
+  font-weight: 600;
+}
+
+.mid-nav {
+  display: flex;
+  align-items: center;
+}
+
+.mid-nav img {
+  height: 50px;
+  align-self: center;
+}
+
+.right-nav {
+  display: flex;
+}
+
+.right-nav button {
+  background: #567b95;
+  height: 35px;
+  border: 1px solid#326891;
+  border-radius: 4px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 800;
+  font-size: 10px;
+  padding: 5px 17px;
+  margin: 0 3px;
+}
+
+.right-nav .button1 {
+  margin-right: 15px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 200px;
+}
+
+#titled {
+  font-family: "Sorts Mill Goudy", serif;
+  font-style: italic;
+  font-size: 2.3rem;
+  font-weight: bolder;
+  margin-bottom: 25px;
+  margin-left: -248px;
+  line-height: 45px;
+}
+
+.title .subtitle {
+  color: #666;
+  font-size: 13px;
+  width: 735px;
+  align-self: start;
+}
+
+.title .subtitle span {
+  color: #888;
+  font-size: 12px;
+}
+
+.logo-separator img {
+  height: 76px;
+  width: 194px;
+  margin-top: 5px;
+}
+
+section .img img {
+  height: 39em;
+  width: 59em;
+}
+
+.mainsection {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: auto;
+  margin: -5rem;
+}
+
+.subsection1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column: 4/8;
+  grid-gap: 10px;
+}
+
+.more-in a {
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  margin: 2px 0;
+}
+
+.most-popular a {
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: black;
+}
+
+.subscribe a {
+  margin: 7px 0;
+}
+
+.end ul li a {
+  font-size: 10px;
+  text-decoration: none;
+  color: #888;
+}
+
+.subsection1 .report-name {
+  font-weight: 600;
+  grid-column: 1/3;
+  color: #333;
+}
+
+.unlock hr {
+  color: #ccc;
+  width: 73px;
+}
+
+.subsection1 .report-name a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #a09999f7;
+}
+
+.subsection1 .icons a {
+  background: #eee;
+  display: inline-block;
+  border-radius: 102%;
+  padding: 8px;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+
+.editor .img-text a {
+  display: flex;
+  text-decoration: none;
+  color: #333;
+}
+
+.end {
+  grid-column: 2 / 9;
+}
+
+.end-line {
+  width: 105%;
+  color: #888;
+}
+
+.end ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.subsection5 .text a {
+  text-decoration: none;
+}
+
+.more-in a:hover {
+  text-decoration: underline;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+.end ul li a:hover {
+  text-decoration: underline;
+}
+
+.subsection1 .report-name a:hover {
+  border-bottom: none;
+}
+
+.subsection1 .date-icons {
+  grid-area: 2 / 1 / 2 / 2;
+  font-size: small;
+  align-self: center;
+}
+
+.subsection1 .icons {
+  grid-area: 2 / 3 / 2 / 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: center;
+  align-self: center;
+}
+
+.subsection2 {
+  grid-column: 4/8;
+  grid-auto-rows: minmax(10px, auto);
+}
+
+.subsection2 p,
+.content2 p,
+.subsection4 .content1-sub4,
+.subsection4 .content2-sub4,
+.content3-sub4 {
+  line-height: 1.875;
+  font-weight: 600;
+  color: #333;
+}
+
+.editor {
+  grid-area: 2 / 8 / 5/ 10;
+  align-self: center;
+  margin-left: 60px;
+  margin-top: -49px;
+}
+
+.editor .editor-title {
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.more-in hr {
+  width: 783px;
+  color: #000;
+}
+
+.logo-separator hr {
+  width: 100%;
+  border: 3px double var(--border-color);
+}
+
+.editor .editor-title hr {
+  width: 228px;
+  border: 1px solid var(--border-color);
+  margin-left: 0;
+}
+
+.editor .img-text a:hover {
+  text-decoration: underline;
+}
+
+.editor .img-text {
+  display: flex;
+  font-size: 8px;
+  margin-bottom: 22px;
+}
+
+.editor .img-text p {
+  font-size: 10px;
+  margin-top: -1px;
+  align-self: center;
+  width: 133px;
+  margin-left: 10px;
+}
+
+.subscribe a img {
+  margin-right: 5px;
+}
+
+.editor .img-text img {
+  height: 80px;
+  width: 81px;
+}
+
+.unlock {
+  grid-area: 3 / 4 / 4 / 8;
+  justify-self: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.content2 {
+  grid-area: 4 / 4 / 5 / 8;
+}
+
+.subsection3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column: 3 / 9;
+  grid-row: 5 / 6;
+  grid-template-rows: 70px repeat(4, 1fr);
+  grid-gap: 1em;
+}
+
+.subsection3 .theory {
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+  align-self: end;
+}
+
+.subsection3 .theory p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.subsection3 .theory #theory-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.subsection3 .img {
+  grid-column: 1 / 5;
+  grid-row: 2 / 6;
+  z-index: -1;
+}
+
+.subsection3 .img img {
+  width: 100%;
+}
+
+.subsection3 .number1 {
+  grid-area: 3 / 1 / 4 / 2;
+  font-size: 12px;
+}
+
+.subsection3 .number2 {
+  grid-area: 3 / 2 / 4 / 3;
+  font-size: 12px;
+}
+
+.subsection3 .number3 {
+  grid-area: 3 / 3 / 4 / 4;
+  font-size: 12px;
+}
+
+.subsection3 .number4 {
+  grid-area: 3 / 4 / 4 / 5;
+  font-size: 12px;
+}
+
+.subsection3 .number5 {
+  grid-area: 5 / 1 / 6 / 2;
+  font-size: 12px;
+}
+
+.subsection3 .number6 {
+  grid-area: 5 / 2 / 6 / 3;
+  font-size: 12px;
+}
+
+.subsection3 .number7 {
+  grid-area: 5 / 3 / 6 / 4;
+  font-size: 12px;
+}
+
+.subsection3 .number8 {
+  grid-area: 5 / 4 / 6 / 5;
+  font-size: 12px;
+}
+
+.subsection3 .lower {
+  margin-top: -15px;
+}
+
+.subsection3 .theory-foot {
+  grid-area: 7 / 1 / 8 / 3;
+  font-size: 12px;
+  margin-top: -25px;
+}
+
+.subsection3 .theory-foot hr {
+  width: 60px;
+  float: left;
+  color: #000;
+}
+
+.subsection3 .theory-foot p {
+  clear: left;
+  margin-top: 25px;
+}
+
+.subsection4 {
+  grid-column: 4/8;
+  grid-auto-rows: minmax(10px, auto);
+}
+
+.subsection4 .pict-sub {
+  margin-top: -1px;
+  margin-bottom: 3px;
+  color: #666;
+  font-size: 14px;
+  font-weight: 600;
+  width: 532px;
+}
+
+.subsection4 .pict-sub span {
+  color: #8d8d8d;
+  font-size: 10px;
+  display: inline-block;
+}
+
+.subsection4 .video1 {
+  width: 590px;
+}
+
+.subsection4 .img img {
+  width: 590px;
+  height: 315px;
+}
+
+.subsection5 {
+  grid-column: 4/8;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  margin-bottom: 50px;
+}
+
+.subsection5 .text {
+  font-size: 10px;
+}
+
+.subsection5 .text a:hover {
+  text-decoration: none;
+}
+
+.subsection5 .comments-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subsection5 .comments-buttons .btn {
+  background: #567b95;
+  padding: 7px 70px;
+  border-radius: 2px;
+  border: 1px solid #567b95;
+  color: white;
+  font-weight: 600;
+}
+
+.subsection5 .icons {
+  width: 202px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.subsection5 .comments-buttons .icons a {
+  background: #eee;
+  display: inline-block;
+  border-radius: 12px;
+  padding: 7px;
+  text-decoration: none;
+  color: black;
+}
+
+.subscribe a svg {
+  margin-right: 7px;
+}
+
+.subsection5 .comments-buttons .icons a svg {
+  font-size: 12px;
+}
+
+.more-in {
+  grid-column: 2 / 7;
+}
+
+.more-in a h2 {
+  font-size: 14px;
+}
+
+.more-in .wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  width: 800px;
+  flex-wrap: wrap;
+}
+
+.more-in .wrapper .wrap-item {
+  width: 250px;
+  margin-right: 10px;
+}
+
+.more-in .wrapper .wrap-item .more-image {
+  width: 251px;
+  height: 150px;
+}
+
+.footer-content .col-6 img {
+  width: 18px;
+  height: 18px;
+}
+
+.more-in .wrapper .wrap-item .more-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.more-in .wrapper .wrap-item .legend {
+  font-size: 9px;
+  float: right;
+}
+
+.more-in .wrapper .wrap-item .sub-title {
+  clear: right;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.more-in .wrapper .wrap-item .legend-2 {
+  float: left;
+  font-size: 9px;
+}
+
+#leg-hide {
+  visibility: hidden;
+}
+
+.more-in .wrapper2 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 800px;
+}
+
+.more-in .wrapper2 .wrap-item {
+  /* display: flex;
+  flex-direction: column; */
+  width: 250px;
+  margin-right: 10px;
+}
+
+.more-in .wrapper2 .wrap-item .more-image {
+  width: 251px;
+  height: 150px;
+}
+
+.more-in .wrapper2 .wrap-item .more-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.more-in .wrapper2 .wrap-item .legend {
+  font-size: 9px;
+  float: right;
+}
+
+.more-in .wrapper2 .wrap-item .sub-title {
+  clear: right;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.more-in .wrapper2 .wrap-item .legend-2 {
+  float: left;
+  font-size: 9px;
+}
+
+.most-popular {
+  grid-column: 7 / 10;
+  margin-left: 74px;
+  width: 324px;
+}
+
+#most-popular-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.logo-separator {
+  grid-column: 2/9;
+  display: grid;
+}
+
+.logo-separator .logo {
+  display: grid;
+  grid-column: 1/ 2;
+}
+
+.logo-separator .links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-separator #link-1 {
+  margin-top: -28px;
+  z-index: -3;
+}
+
+.logo-separator .links #link-2 {
+  text-decoration: none;
+  font-size: 8px;
+  color: #666;
+  align-self: center;
+}
+
+.footer-content {
+  display: grid;
+  grid-column: 2 / 9;
+  grid-auto-flow: column;
+}
+
+.footer-content .col {
+  display: grid;
+  justify-content: start;
+  grid-auto-rows: min-content;
+}
+
+.footer-content .col p {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.col-6 {
+  border-left: 1px solid #888;
+  padding-left: 10px;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.sub-line {
+  width: 170px;
+  color: #888;
+}
+
+a.sub-list {
+  font-size: 10px;
+}
